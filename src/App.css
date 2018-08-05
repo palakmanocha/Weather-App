@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://images.pexels.com/photos/258109/pexels-photo-258109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center; 
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.navbar-inverse{
+    height:10vh;
+}
+
+.main{
+    padding: 5vh;
+    margin-top: 7vh;
+    color: black;
+}
+.Weather{
+    font-size: 20px;
+    margin-top:3vh;
+    color:rgba(255,255, 255, 0.9);
+    background-color: rgba(0,0, 0, 0.5);
+    width:30vw;
+    margin-left: 32vw;
+    border-radius:5px;
+    padding: 2vh; 
+    display: none;
+}
+input{
+    margin: 5px;
+    border-radius: 3px;
+    border: none;
+    height: 26px;
+    padding: 3px;
+}
+.btn-default{
+    border:none;
+    height: 26px;
+    width:90px;
+    padding: 2px;
+}
