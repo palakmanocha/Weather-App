@@ -13,7 +13,8 @@ class App extends Component {
     country:undefined,
     humidity:undefined,
     description:undefined,
-    error:undefined
+    error:undefined,
+    showWeather:false
   }
 
   getWeather = async (e) => {
@@ -55,7 +56,7 @@ class App extends Component {
         });
       }
     }
-    document.getElementById('weather').style.display='block';
+    this.state.showWeather=true;
   }
 
   render() {
@@ -65,7 +66,7 @@ class App extends Component {
         <div className= "main" >
           <Title />
           <Form getWeather={this.getWeather}/>
-          <Weather  details={this.state}/>
+         {this.state.showWeather ? <Weather  details={this.state}/> : null} 
         </div>
       </div>
     );

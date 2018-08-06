@@ -1,19 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../App.css';
 
-class Weather extends Component{
-    render(){
-        // var rainyDay = new RainyDay(options);
-        return(
-            <div id='weather' className="Weather">
-               {this.props.details.country && this.props.details.city && <p> {this.props.details.city} ,{this.props.details.country}</p>}
-               {this.props.details.temperature && <p>Temperature: {this.props.details.temperature}</p>}
-               {this.props.details.description && <p>Description: {this.props.details.description}</p>}              
-               {this.props.details.humidity && <p>Humidity: {this.props.details.humidity}</p>}    
-               {this.props.details.error && <p> {this.props.details.error}</p>}        
-            </div>
-        );
-    }
-};
+const Weather = (props) => (
+    <div id='weather' className="Weather">
+        {props.details.country && props.details.city && <p> {props.details.city} ,{props.details.country}</p>}
+        {props.details.temperature && <p>Temperature: {props.details.temperature}</p>}
+        {props.details.description && <p>Description: {props.details.description}</p>}              
+        {props.details.humidity && <p>Humidity: {props.details.humidity}</p>}    
+        {props.details.error && <p> {props.details.error}</p>}        
+    </div>
+)
 export default Weather;
 
