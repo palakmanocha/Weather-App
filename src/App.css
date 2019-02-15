@@ -3,7 +3,7 @@
 }
 body{
     /* background-image: url('https://images.pexels.com/photos/1295138/pexels-photo-1295138.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
-    background-image: url('https://images.pexels.com/photos/139806/pexels-photo-139806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');    
+    background-image: url('https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');    
     /* background-image: url('https://images.pexels.com/photos/821654/pexels-photo-821654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,7 +20,6 @@ body{
     padding: 5vh;
     margin-top: 7vh;
     color:black;
-    /* color:white; */
 }
 .Weather{
     font-size: 20px;
